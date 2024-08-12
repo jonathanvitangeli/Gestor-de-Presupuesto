@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Presupuesto Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestor de Presupuesto Personal</h1>
+        </header>
+        <main>
+            <section class="budget-form">
+                <h2>Ingresar Datos</h2>
+                <table>
+                    <tr>
+                        <td><label for="incomeDesc">Descripción del Ingreso:</label></td>
+                        <td><input type="text" id="incomeDesc" placeholder="Descripción del ingreso"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="income">Sueldo:</label></td>
+                        <td><input type="number" id="income" placeholder="0" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="expenseDesc">Descripción del Gasto:</label></td>
+                        <td><input type="text" id="expenseDesc" placeholder="Descripción del gasto"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="expense">Gastos:</label></td>
+                        <td><input type="number" id="expense" placeholder="0" min="0"></td>
+                    </tr>
+                </table>
+                <button id="addEntryBtn">Agregar</button>
+            </section>
+            <section class="result">
+                <h2>Resultado</h2>
+                <div id="incomeList">
+                    <h3>Ingresos</h3>
+                    <ul></ul>
+                </div>
+                <div id="expenseList">
+                    <h3>Gastos</h3>
+                    <ul></ul>
+                </div>
+                <p><strong>Saldo Restante:</strong> <span id="result">0</span></p>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
